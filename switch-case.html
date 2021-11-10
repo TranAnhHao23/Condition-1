@@ -8,7 +8,7 @@
 
 </body>
 <script>
-<!--Bài 1-->
+// Bài 1
 let browser = prompt("What is your browser?")
 switch (browser) {
     case 'Edge':
@@ -22,6 +22,29 @@ switch (browser) {
         break;
     default:
         alert('We hope that this page looks ok!');
+}
+// Bài 2
+let a = prompt('a?', '');
+switch (a) {
+    case 0:
+        alert(0);
+        break;
+    case 1:
+        alert(1);
+        break;
+    case 2:
+    case 3:
+        alert('2,3');
+        break;
+}
+// Bài 3
+let value = prompt('Type a number', 0);
+if (value > 0) {
+    alert(1);
+} else if (value < 0) {
+    alert(-1);
+} else {
+    alert(0);
 }
 </script>
 </html>
