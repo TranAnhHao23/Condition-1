@@ -33,33 +33,63 @@
 //         document.write("This number is negative");
 //     }
 // Bài 4
-        let x = parseInt(prompt("Input the first number"));
-        let y = parseInt(prompt("Input the second number"));
-        let z = parseInt(prompt("Input the third number"));
-        let max = 0;
-
-            if (x>y && x>z){
-                document.writeln('num 1 is a biggest number');
-                max = x;
-            } else if (y>z){
-                document.writeln('num 2 is a biggest number');
-                max = y;
-            } else {
-                document.writeln('num 3 is a biggest number');
-                max = z;
-            }
-            if (x === max && y === max){
-                document.writeln('num 1 và num 2 is a biggest number');
-            } else if (y === max && z === max) {
-                document.writeln('num 2 và num 3 is a biggest number');
-            } else if (x === max && z === max) {
-                document.writeln('num 1 và num 3 is a biggest number');
-            }
+//         let x = parseInt(prompt("Input the first number"));
+//         let y = parseInt(prompt("Input the second number"));
+//         let z = parseInt(prompt("Input the third number"));
+//         let max = 0;
+//
+//             if (x>y && x>z){
+//                 document.writeln('num 1 is a biggest number');
+//                 max = x;
+//             } else if (y>z){
+//                 document.writeln('num 2 is a biggest number');
+//                 max = y;
+//             } else {
+//                 document.writeln('num 3 is a biggest number');
+//                 max = z;
+//             }
+//             if (x === max && y === max){
+//                 document.writeln('num 1 và num 2 is a biggest number');
+//             } else if (y === max && z === max) {
+//                 document.writeln('num 2 và num 3 is a biggest number');
+//             } else if (x === max && z === max) {
+//                 document.writeln('num 1 và num 3 is a biggest number');
+//             }
 // Bài 5
-
-
-
-
-
+//         let kiemTra = +prompt("Nhập điểm kiểm tra: ");
+//         let thiGiuaKy = +prompt("Nhập điểm thi giữa kỳ: ");
+//         let thiCuoiKy = +prompt("Nhập điểm thi cuối kỳ: ");
+//         let xepLoai = (kiemTra*2 + thiGiuaKy*3 + thiCuoiKy*4)/9;
+//         if (xepLoai >= 8){
+//             alert("Đạt loại giỏi")
+//         } else if (xepLoai >= 7.5){
+//             alert("Đạt loại khá")
+//         } else if (xepLoai >= 6){
+//             alert("Đạt loại trung bình")
+//         } else {
+//             alert("Đạt loại yếu")
+//         }
+// Bài 6
+//             let doanhSo = +prompt("Nhập doanh số bán hàng");
+//             let commission = 0;
+//             if (doanhSo >= 100000000) { //Doanh số trên 100tr
+//                 commission = 0.1*doanhSo;
+//             } else if (doanhSo >= 50000000) { // Doanh số trên 50tr
+//                 commission = 0.05*doanhSo;
+//             } else {
+//                 commission = 0.025*doanhSo;
+//             }
+//             alert("Hoa hồng = "+commission)
+// Bài 7
+//             let thoiGianGoi = +prompt("Nhập số thời gian cuộc gọi");
+//             let cuocDienThoai = 0;
+//             if (thoiGianGoi > 200) {
+//                 cuocDienThoai = (thoiGianGoi - 200)*200 + 150*400 + 50*600;
+//             } else if (thoiGianGoi > 50) {
+//                 cuocDienThoai = (thoiGianGoi - 50)*400 + 50*600;
+//             } else {
+//                 cuocDienThoai = thoiGianGoi * 600;
+//             }
+//             alert("Tổng cước điện thoại = " + cuocDienThoai);
 </script>
 </html>
