@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Difficult Calculator</title>
+</head>
+<style>
+    table{
+        width: 50px;
+        height: 200px;
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    button{
+        width: 30px;
+        height: 30px;
+    }
+    th{
+        border: 1px solid;
+        height: 25%;
+        padding: 5px;
+    }
+</style>
+<body>
+<form >
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="show"></td>
+
+        </tr>
+        <tr>
+            <td><button type="button" id="1" value="1">1</button></td>
+            <td><button type="button" id="2">2</button></td>
+            <td><button type="button" id="3">3</button></td>
+            <td><button type="button" id="+">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="4">4</button></td>
+            <td><button type="button" id="5">5</button></td>
+            <td><button type="button" id="6">6</button></td>
+            <td><button type="button" id="-">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="7">7</button></td>
+            <td><button type="button" id="8">8</button></td>
+            <td><button type="button" id="9">9</button></td>
+            <td><button type="button" id="*">*</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="C">C</button></td>
+            <td><button type="button" id="0">0</button></td>
+            <td><button type="button" id="=">=</button></td>
+            <td><button type="button" id="/">/</button></td>
+        </tr>
+    </table>
+    <p >
+        <span id="show2"></span>
+    </p>
+</form>
+</body>
+<script>
+    function showOb(){
+        let inputOb = document.getElementById('show').value
+        document.getElementById('show2').innerHTML = 'Giá trị out ' + inputOb
+    }
+
+</script>
+</html>
