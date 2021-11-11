@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practise Condition 2</title>
+</head>
+<body>
+<input type="text" id="soDien" placeholder="Nhập số điện" onchange="tinhGiaDien()">
+<p id="soDien1"></p>
+<br>
+<input type="text" id="thueTNCN" placeholder="Nhập lương tháng của bạn" onchange="tinhThueTNCN()">
+<p id="thueTNCN1"></p>
+<br>
+<input type="text" id="tienGui" placeholder="Nhập số tiền gửi NH"> &nbsp;
+<input type="text" id="soThang" placeholder="Số tháng cho vay"> &nbsp;
+<input type="text" id="lai" placeholder="Lãi suất ngân hàng theo năm (%)" onchange="tinhLaiNH()">
+<p id="lai1"></p>
+<br>
+
+
+</body>
+<script>
+    // Bài 1
+    // let C = prompt("Nhập độ C: ")
+    // alert("Độ F = "+(9*C/5 + 32));
+    // Bài 2
+    // let m = prompt("Nhập độ cao (m):")
+    // alert("Chuyển đổi sang ft = "+(m*3.2808));
+    // Bài 3
+    // let a = prompt("Kích thước 1 cạnh hình vuông: ")
+    // alert("Hình vuông có diện tích = "+ (Math.pow(a,2));
+    // Bài 4
+    // let chieuDai = prompt("Nhập chiều dài hình chữ nhật: ");
+    // let chieuRong = prompt("Nhập chiều rộng hình chữ nhật: ");
+    // alert("Hình chữ nhật có diện tích = " + (chieuDai*chieuRong));
+    // Bài 5
+    // let canh1 = prompt("Nhập kích thước cạnh kề a: ");
+    // let canh2 = prompt("Nhập kích thước cạnh kề b: ");
+    // alert("Diện tích tam giác vuông có 2 cạnh kề a, b = " (a*b/2));
+    // Bài 6
+    // let a = +prompt("Nhập a: ");
+    // let b = +prompt("Nhập b: ");
+    // if (a == 0){
+    //     if (b == 0){
+    //         alert("Vô số nghiệm");
+    //     } else {
+    //         alert("Vô nghiệm");
+    //     }
+    // } else {
+    //     alert("Nghiệm có giá trị = " + (-b/a));
+    // }
+    // Bài 7
+    // let a = +prompt("Nhập số a");
+    // let b = +prompt("Nhập số b");
+    // let c = +prompt("Nhập số c");
+    // let delta = Math.pow(b,2) - 4*a*c;
+    //
+    // if (a==0){
+    //     if(b==0){
+    //         document.write("Vô lý")
+    //     } else
+    //         document.write("Nghiệm bằng -c/b")
+    // } else if (delta < 0) {
+    //     document.write("Vô nghiệm bạn ê")
+    // } else if (delta == 0){
+    //     document.write("Phương trình có 1 nghiệm kép")
+    // } else {
+    //     document.write("Phương trình có 2 nghiệm đơn")
+    // }
+    // Bài 8
+    // let tuoi = +prompt("Nhập số nguyên bất kỳ: ");
+    // if (tuoi < 0 && tuoi >= 120){
+    //     alert("Đây không phải tuổi của 1 người");
+    // } else {
+    //     alert("Đây là tuổi của một người");
+    // }
+    // Bài 9
+    // let a = +prompt("Nhập số a");
+    // let b = +prompt("Nhập số b");
+    // let c = +prompt("Nhập số c");
+    // if ( a+b > c && b+c > a && c+a > b) {
+    //     alert("3 số này tạo thành tam giác")
+    // } else {
+    //     alert("3 số này không tạo thành tam giác")
+    // }
+    // Bài 10
+    // function tinhGiaDien() {
+    //     let soDien = parseInt(document.getElementById("soDien").value)
+    //     let tongTien = 0;
+    //     if (soDien > 400) {
+    //         tongTien = 1484 * 50 + 1533 * 50 + 1786 * 100 + 2242 * 100 + 2503 * 100 + (soDien - 400) * 2578
+    //     } else if (soDien > 300) {
+    //         tongTien = 1484 * 50 + 1533 * 50 + 1786 * 100 + 2242 * 100 + 2503 * (soDien - 300)
+    //     } else if (soDien > 200) {
+    //         tongTien = 1484 * 50 + 1533 * 50 + 1786 * 100 + 2242 * (soDien - 200)
+    //     } else if (soDien > 100) {
+    //         tongTien = 1484 * 50 + 1533 * 50 + 1786 * (soDien - 100)
+    //     } else if (soDien > 50) {
+    //         tongTien = 1484 * 50 + 1533 * (soDien - 50)
+    //     } else {
+    //         tongTien = 1484 * soDien
+    //     }
+    //     document.getElementById("soDien1").innerText = "Tổng giá điện = "+tongTien
+    // }
+
+    // Bài 11
+    // function tinhThueTNCN() {
+    //     let luong = +document.getElementById("thueTNCN").value;
+    //     let thueTNCN = 0;
+    //     if (luong > 80000000) {
+    //         thueTNCN = 0.35 * luong;
+    //     } else if (luong > 52000000) {
+    //         thueTNCN = 0.3 * luong;
+    //     } else if (luong > 32000000) {
+    //         thueTNCN = 0.25 * luong;
+    //     } else if (luong > 18000000) {
+    //         thueTNCN = 0.2 * luong;
+    //     } else if (luong > 10000000) {
+    //         thueTNCN = 0.15 * luong;
+    //     } else if (luong > 5000000) {
+    //         thueTNCN = 0.1 * luong;
+    //     } else {
+    //         thueTNCN = 0.05 * luong;
+    //     }
+    //     document.getElementById("thueTNCN1").innerHTML = "Số tiền thuế phải nộp = " + thueTNCN;
+    // }
+    //
+    // // Bài 12
+    // function tinhLaiNH() {
+    //     let tienGui = +document.getElementById("tienGui").value
+    //     let soThang = +document.getElementById("soThang").value
+    //     let laiSuat = +document.getElementById("lai").value
+    //     let lai = tienGui * laiSuat / 100 / 12 * soThang;
+    //     document.getElementById("lai1").innerText = "Tổng tiền lãi = "+lai;
+    //
+    // }
+
+
+</script>
+
+</html>
