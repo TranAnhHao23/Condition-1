@@ -8,7 +8,7 @@
     table{
         width: 50px;
         height: 200px;
-        border: 1px solid;
+        border: 3px solid;
         border-collapse: collapse;
         text-align: center;
     }
@@ -26,32 +26,32 @@
 <form >
     <table>
         <tr>
-            <td colspan="4"><input type="text" id="show"></td>
+            <th colspan="4"><input type="text" id="show"></th>
 
         </tr>
         <tr>
-            <td><button type="button" id="1" value="1">1</button></td>
-            <td><button type="button" id="2">2</button></td>
-            <td><button type="button" id="3">3</button></td>
-            <td><button type="button" id="+">+</button></td>
+            <td><button type="button" id="1" value="1" onclick="display(this.value)">1</button></td>
+            <td><button type="button" id="2" value="2" onclick="display(this.value)">2</button></td>
+            <td><button type="button" id="3" value="3" onclick="display(this.value)">3</button></td>
+            <td><button type="button" id="+" value="+" onclick="display(this.value)">+</button></td>
         </tr>
         <tr>
-            <td><button type="button" id="4">4</button></td>
-            <td><button type="button" id="5">5</button></td>
-            <td><button type="button" id="6">6</button></td>
-            <td><button type="button" id="-">-</button></td>
+            <td><button type="button" id="4" value="4" onclick="display(this.value)">4</button></td>
+            <td><button type="button" id="5" value="5" onclick="display(this.value)">5</button></td>
+            <td><button type="button" id="6" value="6" onclick="display(this.value)">6</button></td>
+            <td><button type="button" id="-" value="-" onclick="display(this.value)">-</button></td>
         </tr>
         <tr>
-            <td><button type="button" id="7">7</button></td>
-            <td><button type="button" id="8">8</button></td>
-            <td><button type="button" id="9">9</button></td>
-            <td><button type="button" id="*">*</button></td>
+            <td><button type="button" id="7" value="7" onclick="display(this.value)">7</button></td>
+            <td><button type="button" id="8" value="8" onclick="display(this.value)">8</button></td>
+            <td><button type="button" id="9" value="9" onclick="display(this.value)">9</button></td>
+            <td><button type="button" id="*" value="*" onclick="display(this.value)">*</button></td>
         </tr>
         <tr>
-            <td><button type="button" id="C">C</button></td>
-            <td><button type="button" id="0">0</button></td>
-            <td><button type="button" id="=">=</button></td>
-            <td><button type="button" id="/">/</button></td>
+            <td><button type="reset" id="C">C</button></td>
+            <td><button type="button" id="0" value="0" onclick="display(this.value)">0</button></td>
+            <td><button type="button" id="=" onclick="result()">=</button></td>
+            <td><button type="button" id="/" value="/" onclick="display(this.value)">/</button></td>
         </tr>
     </table>
     <p >
@@ -60,10 +60,13 @@
 </form>
 </body>
 <script>
-    function showOb(){
-        let inputOb = document.getElementById('show').value
-        document.getElementById('show2').innerHTML = 'Giá trị out ' + inputOb
+    function display(value){
+        let all = document.getElementById('show').value += value;
+        console.log(all);
     }
-
+    function result(){
+        let result = eval(document.getElementById('show').value);
+        document.getElementById('show').value = result;
+    }
 </script>
 </html>
