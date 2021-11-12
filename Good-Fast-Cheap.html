@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Fast Cheap</title>
+</head>
+<body>
+<form onload="twoNotThree()">
+    <input type="checkbox" id="good" name="checked" onclick="notFast()">
+    <label for="good"> Good</label><br>
+    <input type="checkbox" id="fast" name="checked" onclick="notCheap()">
+    <label for="fast"> Fast</label><br>
+    <input type="checkbox" id="cheap" name="checked" onclick="notGood()">
+    <label for="cheap"> Cheap</label><br>
+</form>
+</body>
+<script>
+    let checkGood = document.getElementById('good');
+    let checkFast = document.getElementById('fast');
+    let checkCheap = document.getElementById('cheap');
+
+    function notFast() {
+        if (checkCheap.checked == checkFast.checked){
+            document.getElementById('fast').checked = false;
+        }
+    }
+    function notCheap() {
+        if (checkGood.checked == checkFast.checked){
+            document.getElementById('cheap').checked = false;
+        }
+    }
+    function notGood() {
+        if (checkGood.checked == checkFast.checked){
+            document.getElementById('good').checked = false;
+        }
+    }
+</script>
+</html>

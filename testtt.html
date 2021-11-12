@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Example</title>
+</head>
+<body>
+<input type="checkbox" id="aaa"> test nhé
+<br>
+<input type="button" onclick="turnOff()" value="Turn Off" id="111">
+
+<script>
+  function turnOff(){
+     let a = document.getElementById("aaa")
+    if (a.checked == true){
+      document.getElementById("aaa").checked = false;
+    }
+  }
+</script>
+</body>
+</html>

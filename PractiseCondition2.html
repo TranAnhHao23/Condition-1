@@ -84,24 +84,24 @@
     //     alert("3 số này không tạo thành tam giác")
     // }
     // Bài 10
-    // function tinhGiaDien() {
-    //     let soDien = parseInt(document.getElementById("soDien").value)
-    //     let tongTien = 0;
-    //     if (soDien > 400) {
-    //         tongTien = 1484 * 50 + 1533 * 50 + 1786 * 100 + 2242 * 100 + 2503 * 100 + (soDien - 400) * 2578
-    //     } else if (soDien > 300) {
-    //         tongTien = 1484 * 50 + 1533 * 50 + 1786 * 100 + 2242 * 100 + 2503 * (soDien - 300)
-    //     } else if (soDien > 200) {
-    //         tongTien = 1484 * 50 + 1533 * 50 + 1786 * 100 + 2242 * (soDien - 200)
-    //     } else if (soDien > 100) {
-    //         tongTien = 1484 * 50 + 1533 * 50 + 1786 * (soDien - 100)
-    //     } else if (soDien > 50) {
-    //         tongTien = 1484 * 50 + 1533 * (soDien - 50)
-    //     } else {
-    //         tongTien = 1484 * soDien
-    //     }
-    //     document.getElementById("soDien1").innerText = "Tổng giá điện = "+tongTien
-    // }
+    function tinhGiaDien() {
+        let soDien = parseInt(document.getElementById("soDien").value)
+        let tongTien = 0;
+        if (soDien > 400) {
+            tongTien = 1484 * 50 + 1533 * 50 + 1786 * 100 + 2242 * 100 + 2503 * 100 + (soDien - 400) * 2578
+        } else if (soDien > 300) {
+            tongTien = 1484 * 50 + 1533 * 50 + 1786 * 100 + 2242 * 100 + 2503 * (soDien - 300)
+        } else if (soDien > 200) {
+            tongTien = 1484 * 50 + 1533 * 50 + 1786 * 100 + 2242 * (soDien - 200)
+        } else if (soDien > 100) {
+            tongTien = 1484 * 50 + 1533 * 50 + 1786 * (soDien - 100)
+        } else if (soDien > 50) {
+            tongTien = 1484 * 50 + 1533 * (soDien - 50)
+        } else {
+            tongTien = 1484 * soDien
+        }
+        document.getElementById("soDien1").innerText = "Tổng giá điện = "+tongTien
+    }
 
     // Bài 11
     // function tinhThueTNCN() {
